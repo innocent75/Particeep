@@ -1,0 +1,31 @@
+.gauge {
+  display: flex;
+  width: 80%;
+  height: 10px;
+  margin-top: 10px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.gauge-bar {
+  height: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+.gauge-bar:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.gauge-bar:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.gauge-bar.green {
+  background-color: rgb(124, 191, 113);
+}
+
+.gauge-bar.red {
+  background-color: rgb(183, 87, 87);
+}
